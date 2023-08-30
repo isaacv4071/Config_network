@@ -54,6 +54,6 @@ if __name__ == '__main__':
   net = Mininet(topo=topo,controller=None,autoStaticArp=True)
   net.addController("c0",controller=RemoteController,ip=REMOTE_CONTROLLER_IP,port=6633)
 
-net.start()
-CLI(net)
-net.stop()
+  net.start()
+  CLI(net)
+  net.stop()
