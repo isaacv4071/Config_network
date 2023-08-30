@@ -1,6 +1,7 @@
-from mininet.topo import Topo 
+from mininet.topo import Topo
+
 class MyTopo( Topo ): 
- "Simple topology example."
+  "Simple topology example."
   def __init__( self ):
    "Create custom topo."
    # Initialize topology
@@ -24,4 +25,5 @@ class MyTopo( Topo ):
    self.addLink( Host6, Switch1 )
    self.addLink( Switch0, Switch2 )
    self.addLink( Switch2, Switch1 )
+   
 topos = { 'mytopo': ( lambda: MyTopo() ) }
