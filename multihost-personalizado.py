@@ -12,7 +12,7 @@ class MyTopo(Topo):
 
         # Add hosts
         for i in range(num_hosts):
-            host = self.addHost('h{}'.format(i + 1))
+            host = self.addHost('h{}'.format(i))
             hosts.append(host)
 
         # Add switches
